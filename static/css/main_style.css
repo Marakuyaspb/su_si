@@ -1,27 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Michroma&display=swap');
 
-body{background-color: #1C1C1C;}
+:root{
+	--black: #1C1C1C; /* rgb(28, 28, 28) */
+	--black_shadow: #000000;
+	--green: #81AE3A; /* rgb(129, 174, 58)  */
+	--white_milk: #F5F5F5;
+	--yellow:#FBFF2C;  /*  rgb(251, 255, 44) */
+}
+
+body{
+	background: var(--green);
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.nav-link {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
 /* COLORS */
 
 .black{
-	color: #1C1C1C; /* rgb(28, 28, 28) */
+	color: var(--black);
 }
 .black_bg{
-	background-color: #1C1C1C;
+	background-color: var(--black);
 }
 
 .green{
-	color: #81AE3A; /* rgb(129, 174, 58)  */
+	color: var(--green);
 }
 .green_bg{
-	background-color: #81AE3A; 
+	background-color: var(--green); 
 }
 
 .yellow{
-	color:#FBFF2C; /*  rgb(251, 255, 44) */
+	color: var(--yellow);
 }
 .yellow_bg{
-	background-color:#FBFF2C;
+	background-color: var(--yellow);
 }
 
+
+
+
+
+
+
+/*
+
+Various on devices
+
+*/
+
+
+/* DESCTOP */
+
+@media (min-width: 811px){
+	.logo{
+		width: 280px;
+		padding-left: 40px;
+		padding-top: 10px;
+	}
+	p{
+		font-size: 24px;
+	}
+	.details{
+		font-size: 20px;
+	}
+}
+
+/* PHONE & TABLET */
+
+@media (max-width: 810px) {
+	.logo{
+		width: 180px;
+		padding-top: 10px;
+	}
+	p{
+		font-size: 20px;
+	}
+	.details{
+		font-size: 18px;
+	}
+}
+
+
+.glass{
+	background: linear-gradient(var(--green), var(--black), 0.35);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 20px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	
+	padding: 2em;
+	margin: 3em;
+
+}
+
+
+.glass h2{
+  opacity: 1!important; /* Reset opacity for the h2 element */
+}
+
+
+.nav-link{
+	color:var(--white_milk);
+}
+.nav-link:hover{
+	color:var(--yellow);
+}
