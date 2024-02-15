@@ -1,0 +1,27 @@
+
+body{background-color: #1C1C1C;}
+
+
+/* COLORS */
+
+.black{
+	color: #1C1C1C; /* rgb(28, 28, 28) */
+}
+.black_bg{
+	background-color: #1C1C1C;
+}
+
+.green{
+	color: #81AE3A; /* rgb(129, 174, 58)  */
+}
+.green_bg{
+	background-color: #81AE3A; 
+}
+
+.yellow{
+	color:#FBFF2C; /*  rgb(251, 255, 44) */
+}
+.yellow_bg{
+	background-color:#FBFF2C;
+}
+
