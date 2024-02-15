@@ -20,45 +20,54 @@
 </head>
 <body>
 
-<header class="header">
 
-	<nav class="navbar navbar-dark navbar-expand-lg black_bg">
-
-		<div class="container-fluid">
-
-		    <a class="navbar-brand" href="#">
-		    	<img class='logo' src='static/img/logo_letters.svg'>
-		    </a>
-
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-
-
-		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		      <div class="navbar-nav">
-		      	<div class="d-flex justify-content-around">
-			        <a class="nav-link" aria-current="page" href="#">product</a>
-			        <a class="nav-link" href="#">tariffs</a>
-			        <a class="nav-link" href="#">calculator</a>
-			        <a class="nav-link" href="#">app</a>
-			        <a class="nav-link" href="#">about</a>
-			        <a class="nav-link" href="#">team</a>
-			        <a class="nav-link" href="#">partners</a>
-
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-
-	</nav>
-
-
-</header>
 
 <!-- DESCTOP START -->
 
-	<div class='d-none d-lg-block d-xl-block d-xxl-block pt-2'>
+	<div class='d-none d-lg-block d-xl-block d-xxl-block'>
+
+
+	<header class="header black_bg up_z">
+
+		<div class="d-flex justify-content-around py-2">
+
+			<div>
+			    <a class="navbar-brand" href="#">
+			    	<img class='logo' src='static/img/logo_letters.svg'>
+			    </a>
+			</div>
+
+			<div>
+				<ul class="nav nav-tabs pt-3">
+				  <li class="nav-item">
+				    <a href="#" class="nav-link">product</a>
+				  </li>
+				  <li class="nav-item">
+				    <a href="#" class="nav-link">tariffs</a>
+				  </li>
+				  <li class="nav-item">
+				    <a href="#" class="nav-link">app</a>
+				  </li>
+				  <li class="nav-item dropdown">
+				    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">about</a>
+				    <ul class="dropdown-menu black_bg">
+				      <li><a class="dropdown-item" href="#">about</a></li>
+				      <li><a class="dropdown-item" href="#">team</a></li>
+				      <li><a class="dropdown-item" href="#">partners</a></li>
+				    </ul>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">contact</a>
+				  </li>
+				</ul>
+	        </div>
+
+	      </div>
+
+		</nav>
+	</header>
+
+
 
 		<section class ='black_bg'>
 			<div class='animation_here'>
@@ -77,6 +86,7 @@
 		<section class ='green_bg'>
 		</section>
 
+
 	</div>
 
 <!-- DESCTOP END -->
@@ -85,7 +95,54 @@
 
 	
 <!-- PHONE & TABLET START -->
+
 	<div class='d-block d-lg-none'>
+
+
+	<nav class="navbar navbar-dark navbar-expand-lg black_bg up_z">
+		<div class="container-fluid">
+
+		    <a class="navbar-brand" href="#">
+		    	<img class='logo' src='static/img/logo_letters.svg'>
+		    </a>
+
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav">
+		      	<div class="d-flex justify-content-around">
+		      		<ul>
+			        	<li>
+			        		<a class="nav-link" aria-current="page" href="#">product</a>
+			        	</li>
+			        	<li>
+			        		<a class="nav-link" href="#">tariffs</a>
+			        	</li>
+			        	<li>
+			        		<a class="nav-link" href="#">calculator</a>
+			        	</li>
+			        	<li>
+			        		<a class="nav-link" href="#">app</a>
+			        	</li>
+			        	<li>	
+			        		<a class="nav-link" href="#">about</a>
+			        	</li>
+			        	<li>
+			        		<a class="nav-link" href="#">team</a>
+			        	</li>
+			        	<li>
+				        	<a class="nav-link" href="#">partners</a>
+				        </li>
+			   		</ul>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+	</nav>
+
 
 		<section class ='black_bg'>
 			<div class='animation_here'>
@@ -97,12 +154,13 @@
 			</div>
 		</section>
 
+
 	</div>
 
 <!-- PHONE & TABLET END -->
 
 
-<footer>
+<footer class='black_bg'>
 	
 </footer>
 

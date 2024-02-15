@@ -27,7 +27,9 @@ p {
   font-style: normal;
 }
 
-
+a{
+	text-decoration: none;
+}
 
 /* COLORS */
 
@@ -44,7 +46,12 @@ p {
 .green_bg{
 	background-color: var(--green); 
 }
-
+.white_milk{
+	color: var(--white_milk);
+}
+.white_milk_bg{
+	color: var(--white_milk);
+}
 .yellow{
 	color: var(--yellow);
 }
@@ -72,6 +79,7 @@ Various on devices
 		width: 280px;
 		padding-left: 40px;
 		padding-top: 10px;
+		margin-bottom: 10px;
 	}
 	p{
 		font-size: 24px;
@@ -103,7 +111,7 @@ Various on devices
 	-webkit-backdrop-filter: blur(5px);
 	border-radius: 20px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	
+
 	padding: 2em;
 	margin: 3em;
 
@@ -114,10 +122,31 @@ Various on devices
   opacity: 1!important; /* Reset opacity for the h2 element */
 }
 
+.up_z{
+	position: relative;
+	z-index: 999;
+}
+
 
 .nav-link{
 	color:var(--white_milk);
 }
 .nav-link:hover{
+	color:var(--green);
+}
+.nav-link:focus{
 	color:var(--yellow);
+}
+.nav-tabs{
+	border-bottom:none;
+}
+.nav-tabs .nav-link{
+	border:none;
+}
+.dropdown-item{
+	color: var(--white_milk);
+}
+.dropdown-item:hover{
+	color: var(--yellow);
+	background-color: var(--black_shadow);
 }
