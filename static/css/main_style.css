@@ -150,3 +150,22 @@ Various on devices
 	color: var(--yellow);
 	background-color: var(--black_shadow);
 }
+.smm_link{
+	height: 3.6em;
+  padding-left: .7em;
+  padding-right: .7em;
+  padding-top: 1em;
+}
+.copyright{
+	font-size: 14px;
+	color: var(--white_milk);
+}
+.tg_icon{
+	background: url(static/img/tg_button.svg) no-repeat;
+}
+
+.btn_app{
+	background: #2CA4D7;
+	border-radius: 50px;
+	height: 3.6em;
+}
