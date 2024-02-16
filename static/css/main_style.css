@@ -8,6 +8,7 @@
 	--green_salad: #CCE032;
 	--white_milk: #F5F5F5;
 	--yellow:#FBFF2C;  /*  rgb(251, 255, 44) */
+	--bordo: #811B1B;
 }
 
 body{
@@ -40,7 +41,12 @@ a{
 .black_bg{
 	background-color: var(--black);
 }
-
+.bordo{
+	color: var(--bordo);
+}
+.bordo_bg{
+	background-color: var(--bordo);
+}
 .green{
 	color: var(--green);
 }
