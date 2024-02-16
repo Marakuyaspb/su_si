@@ -37,8 +37,6 @@ document.getElementById('m12').addEventListener('click', function() {
 
 
 
-
-
 function showResult(){
 
   let deposit = parseInt(document.getElementById('deposit').value); 
@@ -77,22 +75,19 @@ function showResult(){
   /* check the time */  
   if (mths < 600) {
 
-        if (deposit === 0 || deposit === null || isNaN(deposit)) {
-            document.getElementById('notion_deposit').innerText = 'Enter any amount, please!';
-        } else if (deposit < 10000) {
-                console.log('i am '+deposit);
-            let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.3)) - plan * mths);
-            document.getElementById('profit_result').innerText = `$ `+the_profit;
-        } else if (deposit > 10000 && deposit <= 50000) {
-            let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.25)) - plan) * mths;
-            document.getElementById('profit_result').innerText = `$ `+the_profit;
-        } else if (deposit <= 100000) {
-            let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.2)) - plan) * mths;
-            document.getElementById('profit_result').innerText = `$ `+the_profit;
-        }
+    if (deposit === 0 || deposit === null || isNaN(deposit)) {
+      document.getElementById('notion_deposit').innerText = 'Enter any amount, please!';
+    } else if (deposit < 10000) {
+        let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.3)) - plan * mths);
+        document.getElementById('profit_result').innerText = `$ `+the_profit;
+    } else if (deposit > 10000 && deposit <= 50000) {
+        let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.25)) - plan) * mths;
+        document.getElementById('profit_result').innerText = `$ `+the_profit;
+    } else if (deposit <= 100000) {
+        let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.2)) - plan) * mths;
+        document.getElementById('profit_result').innerText = `$ `+the_profit;
     }
-
-
+  }
 
   else if(mths === 0 || mths === null || isNaN(mths)){
     document.getElementById('notion').innerText = 'Enter number of months, please';
