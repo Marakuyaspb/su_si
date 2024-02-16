@@ -104,23 +104,25 @@
 
 
 					<div class="d-flex justify-content-start">
-						<div><h4 class='calc_h4 mt-3'>APR</h4></div>
+						<div>
+							<h4 class='calc_h4 mt-3'>APR</h4>
+						</div>
 						<div class='ps-5 py-3'>
 							<div class="form-check">
-							 	<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-							 	<label class="calc_details form-check-label" for="flexRadioDefault1">
+							 	<input class="form-check-input" type="radio" name="flexRadioDefault" id="optimist">
+							 	<label class="calc_details form-check-label" for="optimist">
 							    optimist
 							 	</label>
 							</div>
 							<div class="form-check">
-							 	<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-							 	<label class=" calc_details form-check-label" for="flexRadioDefault1">
+							 	<input class="form-check-input" type="radio" name="flexRadioDefault" id="realist">
+							 	<label class="calc_details form-check-label" for="realist">
 							    realist
 							 	</label>
 							</div>
 							<div class="form-check">
-							 	<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-							 	<label class="calc_details form-check-label" for="flexRadioDefault1">
+							 	<input class="form-check-input" type="radio" name="flexRadioDefault" id="pessimist">
+							 	<label class="calc_details form-check-label" for="pessimist">
 							    pessimist
 							 	</label>
 							</div>
@@ -129,7 +131,6 @@
 
 
 					<input type="text" class="only_int calc_input form-control" placeholder="MONTHS" aria-label="MONTHS">
-
 					<div class="d-flex justify-content-start pb-3">
 						<button class='calc_btn_sm btn_glass me-3'><p>1</p></button>
 						<button class='calc_btn_sm btn_glass me-3'><p>3</button>
@@ -139,7 +140,6 @@
 
 
 					<h4 class='calc_h4'>Subscription  Plan</h4>
-
 					<div class="d-flex justify-content-around pb-3">
 						<div class='calc_details'>
 							monthly
@@ -149,6 +149,26 @@
 						</div>
 						<div class='calc_details'>
 							annual 
+						</div>
+					</div>
+
+
+					<div class='calc_result mb-3'>
+						<div class='profit_info btn_glass'>
+							<div class='calc_details'>
+								YOUR  PROFIT 
+							</div>
+							<div id='profit_result' class='' >
+								${the_profit}
+							</div>
+						</div>
+
+						<div class='mt-2'>
+							<div class='calc_details'>Deposit: ${deposit}</div>
+							<div class='calc_details'>APR: ${apr}</div>
+							<div class='calc_details'>Months: ${mths}</div>
+							<div class='calc_details'>Plan: ${plan} </div>
+
 						</div>
 					</div>
 
