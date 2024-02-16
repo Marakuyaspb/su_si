@@ -14,6 +14,8 @@ calculator
   font-family: "Michroma", sans-serif;
   width: 320px;
   padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .calc_h4{
   font-size: 20px;
@@ -90,3 +92,43 @@ calculator
   -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35) inset;
 }
 
+.form-check-input{
+  background-color: rgba(245, 245, 245, 0.1);
+  border:none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  width: 1.5em;
+  height: 1.5em;
+}
+.form-check-input:checked {
+  background-color: rgba(251, 255, 44, .5);
+  border-color: rgba(251, 255, 44, .1)!important;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+.form-check-input:checked[type="radio"] {
+background-image: url('static/img/checked.svg');
+}
+
+.form-check-input:focus {
+  border-color:rgba(251, 255, 44, .5)!important;
+  outline: 0;
+box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form-switch .form-check-input {
+  width: 3.5em;
+}
+.form-switch .form-check-input:focus {
+  background-image: url('static/img/checked.svg');
+}
+
+.form-check-input:checked {
+  background-color: rgba(251, 255, 44, .5);
+  border-color: rgba(251, 255, 44, .1) !important;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+}

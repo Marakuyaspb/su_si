@@ -103,30 +103,29 @@
 					</div>
 
 
-
 					<div class="d-flex justify-content-start">
 						<div>
 							<h4 class='calc_h4 mt-3'>APR</h4>
 						</div>
 						<div class='ps-5 py-3 radio'>
-							<div class="form-check" value='320'>
+							<div class="pb-2 form-check" value='320'>
 							 	<input class="radio form-check-input" type="radio" name="flexRadioDefault" id="optimist" value='320'>
 
-							 	<label class="calc_details form-check-label" for="optimist">
+							 	<label class="ms-2 calc_details form-check-label" for="optimist">
 							    optimist
 							 	</label>
 							</div>
-							<div class="form-check" value='150'>
+							<div class="pb-2 form-check" value='150'>
 							 	<input class="radio form-check-input" type="radio" name="flexRadioDefault" id="realist" value='150' checked>
 
-							 	<label class="calc_details form-check-label" for="realist">
+							 	<label class="ms-2 calc_details form-check-label" for="realist">
 							    realist
 							 	</label>
 							</div>
 							<div class="form-check"  value='80'>
-							 	<input class="radio form-check-input" type="radio" name="flexRadioDefault" id="pessimist" value='80'>
+							 	<input class=" radio form-check-input" type="radio" name="flexRadioDefault" id="pessimist" value='80'>
 
-							 	<label class="calc_details form-check-label" for="pessimist">
+							 	<label class="ms-2 calc_details form-check-label" for="pessimist">
 							    pessimist
 							 	</label>
 							</div>
@@ -157,25 +156,7 @@
 						</div>
 					</div>
 
-
-					<div class='calc_result mb-3'>
-						<div class='profit_info btn_glass'>
-							<div class='calc_details'>
-								YOUR  PROFIT 
-							</div>
-							<div id='profit_result' class='' >
-								Check
-							</div>
-						</div>
-
-						<div class='mt-2'>
-							<div class='calc_details'>Deposit: ${deposit}</div>
-							<div class='calc_details'>APR: ${apr}</div>
-							<div class='calc_details'>Months: ${mths}</div>
-							<div class='calc_details'>Plan: ${plan} </div>
-
-						</div>
-					</div>
+					<div id='result_inner'></div>
 
 					<center>
 						<button id='show_result' class='calc_btn_result' onClick='showResult(event);'>SHOW  RESULT</button>
