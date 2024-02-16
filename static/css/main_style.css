@@ -5,6 +5,7 @@
 	--black: #1C1C1C; /* rgb(28, 28, 28) */
 	--black_shadow: #000000;
 	--green: #81AE3A; /* rgb(129, 174, 58)  */
+	--green_salad: #CCE032;
 	--white_milk: #F5F5F5;
 	--yellow:#FBFF2C;  /*  rgb(251, 255, 44) */
 }
@@ -103,6 +104,10 @@ Various on devices
 		font-size: 18px;
 	}
 }
+
+
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ 
 
 
 .glass{

@@ -1,0 +1,77 @@
+/*
+
+Here is 
+all
+about 
+calculator
+
+*/
+
+.calc_body{
+  background: linear-gradient(0deg, rgb(251, 255, 44), rgb(129, 174, 58));
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  width: 320px;
+  padding: 20px;
+}
+.calc_h4{
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.calc_btn_sm{
+  height: 30px;
+  border-radius: 8px;
+  min-width: 40px;
+  margin: 8px 0;
+  padding: 4px 8px;
+}
+
+
+.calc_btn_sm p{
+  font-family: "Michroma", sans-serif;
+  font-size: 14px;
+  opacity: 1!important; /* Reset opacity for the h2 element */
+
+}
+.calc_details{
+  font-family: "Michroma", sans-serif;
+  font-size: 14px;
+}
+
+.calc_btn_result{
+  background: #B1CE35;
+  border-radius: 8px;
+  border:none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+
+  padding: 10px 0;
+  width: 270px;
+}
+
+
+.btn_glass{
+  background-color: rgba(245, 245, 245, 0.1);
+  border:none;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.calc_input{
+  background-color: rgba(245, 245, 245, 0.1);
+  border:none;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+}
+
+.calc_input:focus{
+  background-color: rgba(245, 245, 245, 0.1);
+  border:none;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35) inset;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35) inset;
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35) inset;
+}
