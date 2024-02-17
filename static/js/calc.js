@@ -91,7 +91,10 @@ function showResult(){
       document.getElementById('notion_deposit').innerText = 'Enter any amount, please!';
     } 
     else {
-      let the_profit = Math.floor((deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * rate)) - plan * mths));
+      let the_profit = Math.floor( 
+        (deposit + ((deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * rate)) - plan)) * mths 
+      );
+
       let the_profit_space = the_profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
       document.getElementById('result_inner').innerHTML = `<div class='calc_result mb-3'>
