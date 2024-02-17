@@ -46,12 +46,24 @@ function showResult(){
 
   let deposit = parseInt(document.getElementById('deposit').value); 
 
+  let rate;
+
   if (deposit === 0 || deposit === null || isNaN(deposit)){
       document.getElementById('notion_deposit').innerText = 'Enter any amount, please!';
-    }
+      rate = 0;
+  } else if (deposit <= 10000) {
+      rate = 0.3;
+  } else if (deposit > 10000 && deposit <= 50000) {
+      rate = 0.25;
+  } else if (deposit > 100000) {
+      rate = 0.2;
+  }
+
+
 
   let mths = parseInt(document.getElementById('mths').value);
   
+
 
   let apr = 0;
   if (document.getElementById('optimist').checked) {
@@ -65,6 +77,7 @@ function showResult(){
   }
 
 
+
   let plan;
   const checkbox = document.getElementById('subscr_plan');
 
@@ -75,72 +88,31 @@ function showResult(){
   }
 
 
+
   let the_profit;
 
-  /* check the time */  
+
   if (mths < 600) {
     
-
     if (deposit === 0 || deposit === null || isNaN(deposit)) {
       document.getElementById('notion_deposit').innerText = 'Enter any amount, please!';
-    } else if (deposit < 10000) {
-        let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.3)) - plan * mths);
-         
-        document.getElementById('result_inner').innerHTML = `<div class='calc_result mb-3'>
-              <div class='profit_info btn_glass'>
-              <div class='calc_details'>
-                YOUR  PROFIT 
-              </div>
-              <div id='profit_result' class='' >
-                $ ${the_profit}
-              </div>
-            </div>
-            <div class='mt-2'>
-              <div class='calc_details'>Deposit: $ ${deposit}</div>
-              <div class='calc_details'>APR: ${apr}</div>
-              <div class='calc_details'>Months: ${mths}</div>
-              <div class='calc_details'>Plan: ${plan} </div>
-            </div></div>`;
+    } 
+    else {
+      let the_profit = Math.floor((deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * rate)) - plan * mths));
+      let the_profit_space = the_profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
-    } else if (deposit > 10000 && deposit <= 50000) {
-        let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.25)) - plan) * mths;
-
-        document.getElementById('result_inner').innerHTML = `<div class='calc_result mb-3'>
-              <div class='profit_info btn_glass'>
-              <div class='calc_details'>
-                YOUR  PROFIT 
-              </div>
-              <div id='profit_result' class='' >
-                $ ${the_profit}
-              </div>
-            </div>
-            <div class='mt-2'>
-              <div class='calc_details'>Deposit: $ ${deposit}</div>
-              <div class='calc_details'>APR: ${apr}</div>
-              <div class='calc_details'>Months: ${mths}</div>
-              <div class='calc_details'>Plan: ${plan} </div>
-            </div></div>`;
-
-    } else if (deposit <= 100000) {
-
-        let the_profit = (deposit + (deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * 0.2)) - plan) * mths;
-
-        document.getElementById('result_inner').innerHTML = `<div class='calc_result mb-3'>
-              <div class='profit_info btn_glass'>
-              <div class='calc_details'>
-                YOUR  PROFIT 
-              </div>
-              <div id='profit_result' class='' >
-                $ ${the_profit}
-              </div>
-            </div>
-            <div class='mt-2'>
-              <div class='calc_details'>Deposit: $ ${deposit}</div>
-              <div class='calc_details'>APR: ${apr}</div>
-              <div class='calc_details'>Months: ${mths}</div>
-              <div class='calc_details'>Plan: ${plan} </div>
-            </div></div>`;
-    }
+      document.getElementById('result_inner').innerHTML = `<div class='calc_result mb-3'>
+          <div class='profit_info btn_glass'>
+            <div class='calc_details'>YOUR  PROFIT</div>
+            <div id='profit_result' class=''>$ ${the_profit_space}</div>
+          </div>
+          <div class='mt-2'>
+            <div class='calc_details'>Deposit: $ ${deposit}</div>
+            <div class='calc_details'>APR: ${apr} %</div>
+            <div class='calc_details'>Period: ${mths} months</div>
+            <div class='calc_details'>Subscribtion: $ ${plan}/month </div>
+          </div></div>`;
+      } 
   }
 
   else if(mths === 0 || mths === null || isNaN(mths)){
