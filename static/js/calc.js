@@ -18,7 +18,6 @@ document.getElementById('th50').addEventListener('click', function() {
 })
 
 
-
 /* FAST VALUES - MONTHS */
 document.getElementById('m1').addEventListener('click', function() {
   document.getElementById('mths').value = '1';
@@ -36,12 +35,10 @@ document.getElementById('m12').addEventListener('click', function() {
 });
 
 
-
 function showResult(){
   /* delete old notions */
   document.getElementById('notion_deposit').innerText = '';
   document.getElementById('notion').innerText = '';
-
 
 
   let deposit = parseInt(document.getElementById('deposit').value); 
@@ -60,10 +57,8 @@ function showResult(){
   }
 
 
-
   let mths = parseInt(document.getElementById('mths').value);
   
-
 
   let apr = 0;
   if (document.getElementById('optimist').checked) {
@@ -77,7 +72,6 @@ function showResult(){
   }
 
 
-
   let plan;
   const checkbox = document.getElementById('subscr_plan');
 
@@ -86,7 +80,6 @@ function showResult(){
   } else {
       plan = parseInt(50);
   }
-
 
 
   let the_profit;
@@ -124,5 +117,4 @@ function showResult(){
     document.getElementById('notion').innerText = years + ' years!' + ' Are you sure?';
     document.getElementById('profit_result').innerText = 'Check the number of months, please';
   }
-
 }
