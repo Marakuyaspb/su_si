@@ -59,14 +59,18 @@ function showResult(){
   
 
   let apr = 0;
+  let apr_show = 0;
   if (document.getElementById('optimist').checked) {
       apr = parseInt(document.getElementById('optimist').value);
+      apr_show = 320;
   } 
   else if (document.getElementById('realist').checked) {
       apr = parseInt(document.getElementById('realist').value);
+      apr_show = 150;
   } 
   else if (document.getElementById('pessimist').checked) {
       apr = parseInt(document.getElementById('pessimist').value);
+      apr_show = 80;
   }
 
 
@@ -104,9 +108,9 @@ function showResult(){
           </div>
           <div class='mt-2'>
             <div class='calc_details'>Deposit: $ ${deposit}</div>
-            <!-- div class='calc_details'>APR: ${apr} %</div -->
+            <div class='calc_details'>APR: ${apr_show} %</div>
             <div class='calc_details'>Period: ${mths} months</div>
-            <div class='calc_details'>Subscribtion: $ ${plan}/month </div>
+            <div class='calc_details pb-2'>Subscribtion: $ ${plan}/month </div>
           </div></div>`;
       }
   }
