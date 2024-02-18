@@ -48,11 +48,11 @@ function showResult(){
       rate = 0;
   } else if (deposit <= 10000) {
       rate = 0.3;
-  } else if (deposit > 10000 && deposit <= 50000) {
+  } else if (deposit > 10000 && deposit < 50000) {
       rate = 0.25;
-  } else if (deposit > 100000) {
+  } else if (deposit >= 50000) {
       rate = 0.2;
-  }
+  } 
 
 
   let mths = parseInt(document.getElementById('mths').value);
@@ -61,15 +61,15 @@ function showResult(){
   let apr = 0;
   let apr_show = 0;
   if (document.getElementById('optimist').checked) {
-      apr = parseInt(document.getElementById('optimist').value);
+      apr = parseInt((document.getElementById('optimist').value)/100);
       apr_show = 320;
   } 
   else if (document.getElementById('realist').checked) {
-      apr = parseInt(document.getElementById('realist').value);
-      apr_show = 150;
+      apr = parseInt((document.getElementById('realist').value)/100);
+      apr_show = 120;
   } 
   else if (document.getElementById('pessimist').checked) {
-      apr = parseInt(document.getElementById('pessimist').value);
+      apr = parseInt((document.getElementById('pessimist').value)/100);
       apr_show = 80;
   }
 
@@ -78,11 +78,11 @@ function showResult(){
   const checkbox = document.getElementById('subscr_plan');
 
   if (checkbox.checked) {
-      plan = parseInt(25);
+      plan = parseInt(25*12);
   } else {
-      plan = parseInt(50);
+      plan = parseInt(50*12);
   }
-  console.log(plan)
+    console.log(apr);
 
   let the_profit;
 
@@ -93,11 +93,14 @@ function showResult(){
       document.getElementById('notion_deposit').innerText = 'Enter any amount, please!';
     } 
     else {
-      let the_profit = Math.floor( 
+      let the_profit = 
 
-        deposit + ( ( (deposit * ((apr)-rate)) ) - plan) * (mths/12)
+        deposit + ( ( (deposit * (apr-rate)) ) - plan) * (mths/12)
 
-      );
+      ;
+
+  console.log(the_profit);
+      let the_profit_floor = Math.floor(the_profit);
 
       let the_profit_space = the_profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
@@ -110,7 +113,7 @@ function showResult(){
             <div class='calc_details'>Deposit: $ ${deposit}</div>
             <div class='calc_details'>APR: ${apr_show} %</div>
             <div class='calc_details'>Period: ${mths} months</div>
-            <div class='calc_details pb-2'>Subscribtion: $ ${plan}/month </div>
+            <div class='calc_details pb-2'>Subscribtion: $ ${plan}/year </div>
           </div></div>`;
       }
   }
