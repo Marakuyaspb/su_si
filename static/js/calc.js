@@ -20,19 +20,17 @@ document.getElementById('th50').addEventListener('click', function() {
 
 /* FAST VALUES - MONTHS */
 document.getElementById('m1').addEventListener('click', function() {
-  document.getElementById('mths').value = '1';
+  document.getElementById('mths').value = '12';
 });
 
 document.getElementById('m3').addEventListener('click', function() {
-  document.getElementById('mths').value = '3';
+  document.getElementById('mths').value = '24';
 });
 
 document.getElementById('m6').addEventListener('click', function() {
-  document.getElementById('mths').value = '6';
+  document.getElementById('mths').value = '36';
 });
-document.getElementById('m12').addEventListener('click', function() {
-  document.getElementById('mths').value = '12';
-});
+
 
 
 function showResult(){
@@ -80,7 +78,7 @@ function showResult(){
   } else {
       plan = parseInt(50);
   }
-
+  console.log(plan)
 
   let the_profit;
 
@@ -92,7 +90,9 @@ function showResult(){
     } 
     else {
       let the_profit = Math.floor( 
-        (deposit + ((deposit * apr / 100 / 12 - (deposit * apr / 100 / 12 * rate)) - plan)) * mths 
+
+        deposit + ( ( (deposit * ((apr)-rate)) ) - plan) * (mths/12)
+
       );
 
       let the_profit_space = the_profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -104,11 +104,11 @@ function showResult(){
           </div>
           <div class='mt-2'>
             <div class='calc_details'>Deposit: $ ${deposit}</div>
-            <div class='calc_details'>APR: ${apr} %</div>
+            <!-- div class='calc_details'>APR: ${apr} %</div -->
             <div class='calc_details'>Period: ${mths} months</div>
             <div class='calc_details'>Subscribtion: $ ${plan}/month </div>
           </div></div>`;
-      } 
+      }
   }
 
   else if(mths === 0 || mths === null || isNaN(mths)){

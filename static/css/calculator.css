@@ -49,11 +49,19 @@ calculator
   margin: 8px 0;
   padding: 4px 8px;
 }
+.calc_btn_sm:focus{
+  background-color: rgba(251, 255, 44, .3);
+}
 
 .calc_btn_sm p{
   font-family: "Michroma", sans-serif;
   font-size: 14px;
 }
+
+
+
+
+
 .calc_details{
   font-size: 14px;
 }
@@ -73,6 +81,7 @@ calculator
   border:none;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
+
 
 
 .calc_input{
@@ -111,12 +120,12 @@ calculator
 background-image: url('static/img/checked.svg');
 }
 
-.form-check-input:focus {
+/*.form-check-input:focus {
   border-color:rgba(251, 255, 44, .5)!important;
   outline: 0;
-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
-
+*/
 
 
 .form-switch .form-check-input {
