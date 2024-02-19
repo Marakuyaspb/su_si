@@ -101,10 +101,12 @@ Various on devices
 	.carousel_text_block{
 		padding: 15em 8em;
 		color: var(--white_milk);
-		height: 800px;
+		height: 1072px;
 	}	
 
 }
+
+
 
 /* PHONE & TABLET */
 
@@ -123,7 +125,7 @@ Various on devices
 	.carousel_text_block{
 		padding: 12em 4em;
 		color: var(--white_milk);
-		height: 800px;
+		height: 850px;
 	}
 
 }
@@ -153,6 +155,14 @@ Various on devices
 
 .carousel_text_block h2 {
   font-size: 30px;
+}
+
+.mt_-10{
+	margin-top: -10em;
+}
+
+.mt_-26{
+	margin-top: -26em;
 }
 
 .up_z{
@@ -207,3 +217,25 @@ Various on devices
 	height: 3.6em;
 }
 
+.glass_product{
+	width:86%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tariff_card{
+	background-color: var(--green);
+	border-radius: 20px;
+	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+  width: 14em;
+  height: 20em;
+  padding: 12px;
+}
+.tariff_card_img{
+	height: 10.75em;
+}
+.block{
+	height: 970px;
+}

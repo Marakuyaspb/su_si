@@ -7,6 +7,12 @@ circles
 
 */
 
+.relative_block{
+  position: relative;
+}
+.absolute_block{
+  position: absolute;
+}
 
 /* FIRST SCREEN -- DESCTOP */
 
@@ -18,7 +24,6 @@ circles
   position: absolute;
   animation: moveci_1_b_de 25s infinite;
 }
-
 .ci_1_y_de {
   width: 850px;
   height: 850px;
@@ -27,7 +32,6 @@ circles
   position: absolute;
   animation: moveci_1_y_de 25s infinite;
 }
-
 .ci_1_g_de {
   width: 600px;
   height: 600px;
@@ -155,11 +159,6 @@ circles
 
 
 
-
-
-
-
-
 /* FIRST SCREEN -- MOBILE */
 
 .ci_1_b_mo {
@@ -170,7 +169,6 @@ circles
   position: absolute;
   animation: moveci_1_b_mo 25s infinite;
 }
-
 .ci_1_y_mo {
   width: 850px;
   height: 850px;
@@ -179,7 +177,6 @@ circles
   position: absolute;
   animation: moveci_1_y_mo 25s infinite;
 }
-
 .ci_1_g_mo {
   width: 340px;
   height: 340px;
@@ -193,8 +190,8 @@ circles
   0% {
     left: 7%;
     top: 23%;
-    width: 250;
-    height: 250;
+    width: 250px;
+    height: 250px;
   }
   20% {
     left: 0%;
@@ -301,5 +298,240 @@ circles
     top: 80%;
     width: 100px;
     height: 100px;
+  }
+}
+
+
+
+/*  PRODUCT SCREEN   */
+
+.ci_2_y_de{
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+  position: relative;
+  animation: move_prod_2_y 13s infinite;
+}
+.ci_2_yy_de{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_2_yy 11s infinite;
+}
+.ci_2_yyy_de{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_2_yyy 16s infinite;
+}
+.ci_2_b_de{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_2_b 9s infinite;
+}
+.ci_2_bb_de{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_2_bb 18s infinite;
+}
+
+
+@keyframes move_prod_2_y {
+  0%{
+    left: -6%;
+    top: 75%;
+  }
+  50%{    
+    left: -6%;
+    top: 65%;
+  }
+  100%{
+    left: -6%;
+    top: 75%;
+  }
+}
+@keyframes move_prod_2_yy {
+  0%{
+    left: 44%;
+    top:30%;
+  }
+  50%{
+    left: 44%;
+    top: 40%;
+  }
+  100%{
+    left: 44%;
+    top:30%;
+  }
+}
+@keyframes move_prod_2_yyy {
+  0%{
+    left: 74%;
+    top: -20%;
+  }
+  50%{
+    left: 74%;
+    top: -36%;
+  }
+  100%{
+    left: 74%;
+    top: -20%;
+  }
+}
+@keyframes move_prod_2_b {
+  0%{
+    left: 60%;
+    top: 0%;
+  }
+  50%{
+    left: 60%;
+    top: 10%;
+  }
+  100%{
+    left: 60%;
+    top: 0%;
+  }
+}
+@keyframes move_prod_2_bb {
+  0%{
+    left: 88%;
+    top: 140%;
+  }
+  50%{
+    left: 88%;
+    top: 120%;
+  }
+  100%{
+    left: 88%;
+    top: 140%;
+  }
+}
+
+
+
+
+/*  PRODUCT TARIFFS  */
+
+.ci_3_y_de{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_3_y 13s infinite;
+}
+.ci_3_yy_de{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_3_yy 11s infinite;
+}
+.ci_3_b_de{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_b_3 16s infinite;
+}
+.ci_3_bb_de{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_3_bb 9s infinite;
+}
+.ci_3_bbb_de{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+  position: absolute;
+  animation: move_prod_3_bbb 18s infinite;
+}
+
+
+@keyframes move_prod_2_y {
+  0%{
+    left: 5%;
+    top: 5%;
+  }
+  50%{    
+    left: 5%;
+    top: 10%;
+  }
+  100%{
+    left: 5%;
+    top: 5%;
+  }
+}
+@keyframes move_prod_2_yy {
+  0%{
+    left: 44%;
+    top:30%;
+  }
+  50%{
+    left: 44%;
+    top: 40%;
+  }
+  100%{
+    left: 44%;
+    top:30%;
+  }
+}
+@keyframes move_prod_2_yyy {
+  0%{
+    left: 40%;
+    top: -20%;
+  }
+  50%{
+    left: 40%;
+    top: -36%;
+  }
+  100%{
+    left: 40%;
+    top: -20%;
+  }
+}
+@keyframes move_prod_2_b {
+  0%{
+    left: 60%;
+    top: 0%;
+  }
+  50%{
+    left: 60%;
+    top: 10%;
+  }
+  100%{
+    left: 60%;
+    top: 0%;
+  }
+}
+@keyframes move_prod_2_bb {
+  0%{
+    left: 88%;
+    top: 140%;
+  }
+  50%{
+    left: 88%;
+    top: 120%;
+  }
+  100%{
+    left: 88%;
+    top: 140%;
   }
 }
