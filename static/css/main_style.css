@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 400;
   font-style: normal;
 }
+h1{
+	font-size: 48px;
+}
 
 p {
   font-family: "Bai Jamjuree", sans-serif;
@@ -94,6 +97,13 @@ Various on devices
 	.details{
 		font-size: 20px;
 	}
+
+	.carousel_text_block{
+		padding: 15em 8em;
+		color: var(--white_milk);
+		height: 800px;
+	}	
+
 }
 
 /* PHONE & TABLET */
@@ -109,6 +119,13 @@ Various on devices
 	.details{
 		font-size: 18px;
 	}
+
+	.carousel_text_block{
+		padding: 12em 4em;
+		color: var(--white_milk);
+		height: 800px;
+	}
+
 }
 
 
@@ -131,6 +148,11 @@ Various on devices
 
 .glass h2{
   opacity: 1!important; /* Reset opacity for the h2 element */
+}
+
+
+.carousel_text_block h2 {
+  font-size: 30px;
 }
 
 .up_z{
@@ -184,3 +206,4 @@ Various on devices
 	border-radius: 50px;
 	height: 3.6em;
 }
+
