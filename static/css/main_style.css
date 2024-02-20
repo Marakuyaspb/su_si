@@ -22,9 +22,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 400;
   font-style: normal;
 }
-h1{
-	font-size: 48px;
-}
+
 
 p {
   font-family: "Bai Jamjuree", sans-serif;
@@ -91,6 +89,9 @@ Various on devices
 		padding-top: 10px;
 		margin-bottom: 10px;
 	}
+	h1{
+		font-size: 48px;
+	}
 	p{
 		font-size: 24px;
 	}
@@ -117,6 +118,9 @@ Various on devices
 	}
 	p{
 		font-size: 20px;
+	}
+	h1{
+		font-size: 36px;
 	}
 	.details{
 		font-size: 18px;
@@ -163,6 +167,28 @@ Various on devices
 
 .mt_-26{
 	margin-top: -26em;
+}
+
+.mt_10{
+	margin-top: 10em;
+}
+.mt_15{
+	margin-top: 15em;
+}
+.mt_20{
+	margin-top: 20em;
+}
+.mt_30{
+	margin-top: 30em;
+}
+.mt_40{
+	margin-top: 40em;
+}
+.mt_46{
+	margin-top: 46em;
+}
+.pe_38{
+	padding-right: 38em;
 }
 
 .up_z{
@@ -217,18 +243,20 @@ Various on devices
 	height: 3.6em;
 }
 
-.glass_product{
+.block_product{
 	width:86%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.tariff_card{
-	background-color: var(--green);
+.inset_card{
 	border-radius: 20px;
 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
   -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25) inset;
+}
+
+.tariff_card{
   width: 14em;
   height: 20em;
   padding: 12px;
@@ -238,4 +266,10 @@ Various on devices
 }
 .block{
 	height: 970px;
+}
+
+.team_card{
+  width: 20em;
+  height: 30em;
+  padding: 12px;
 }
