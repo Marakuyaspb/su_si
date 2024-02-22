@@ -39,6 +39,10 @@ function showResult(){
   document.getElementById('notion').innerText = '';
 
 
+
+  
+
+
   let deposit = parseInt(document.getElementById('deposit').value); 
 
   let rate;

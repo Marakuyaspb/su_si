@@ -9,6 +9,7 @@
 	--white_milk: #F5F5F5;
 	--yellow:#FBFF2C;  /*  rgb(251, 255, 44) */
 	--bordo: #811B1B;
+	--blue_tg: rgba(44,164,215);
 }
 
 body{
@@ -38,7 +39,9 @@ a{
 .clip_overflow_x{
   overflow-x: clip!important;
 }
-
+.clip_overflow_all{
+	overflow: hidden;
+}
 
 /* COLORS */
 
@@ -51,6 +54,13 @@ a{
 .black_bg_op{
 	background-color:var(--black);
 	opacity: .8;
+}
+.blue_tg_bg{
+	background-color: var(--blue_tg);
+}
+.blue_tg_bg_op{
+	background-color: var(--blue_tg)!important;
+	opacity: .7!important;
 }
 .bordo{
 	color: var(--bordo);
@@ -109,11 +119,22 @@ Various on devices
 		font-size: 20px;
 	}
 
+
+	.block_product{
+		width:86%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.carousel_text_block{
 		padding: 15em 8em;
 		color: var(--white_milk);
 		height: 1072px;
 	}	
+
+	.m_3{
+		margin: 3em;
+	}
 
 	.mt_-26{
 		margin-top: -26em!important;
@@ -142,12 +163,21 @@ Various on devices
 		font-size: 18px;
 	}
 
+	.block_product{
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.carousel_text_block{
 		padding: 12em 4em;
 		color: var(--white_milk);
 		height: 850px;
 	}
 
+	.m_3{
+		margin: .3em;
+	}
 	.mt_-26{
 		margin-top: 0em;
 	}
@@ -172,8 +202,6 @@ Various on devices
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
 	padding: 2em;
-	margin: 3em;
-
 }
 
 
@@ -185,6 +213,7 @@ Various on devices
 .carousel_text_block h2 {
   font-size: 30px;
 }
+
 
 .mt_-10{
 	margin-top: -10em;
@@ -259,6 +288,9 @@ Various on devices
 	background: url(static/img/tg_button.svg) no-repeat;
 }
 
+.icon_xs{
+	width: 1.25em;
+}
 .btn_app{
 	background: #2CA4D7;
 	border-radius: 50px;
@@ -266,11 +298,6 @@ Various on devices
 }
 
 
-.block_product{
-	width:86%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .inset_card{
 	border-radius: 20px;
@@ -284,6 +311,7 @@ Various on devices
   max-width: 14em;
   height: 20em;
   padding: 12px;
+  margin: .9em;
 }
 .tariff_card_img{
 	height: 10.75em;
