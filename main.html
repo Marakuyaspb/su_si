@@ -20,15 +20,16 @@
 
 <!-- DESCTOP TOP START -->
 
-<div class='d-none d-lg-block d-xl-block d-xxl-block'>
+<div class='d-none d-lg-block d-xl-block d-xxl-block '>
 
-	<header class='header black_bg up_z'>
 
-		<div class='d-flex justify-content-between p-2'>
+	<header id='desctop_scroll' class='header'>
+
+		<div class='up_z  black_bg d-flex justify-content-between p-2'>
 
 			<div>
-			    <a class='navbar-brand' href='#'>
-			    	<img class='logo' src='static/img/logo_letters.svg'>
+			    <a class='navbar-brand' href='https://skillunion.io/'>
+			    	<img class='logo ' src='static/img/logo_letters.svg'>
 			    </a>
 			</div>
 
@@ -46,6 +47,7 @@
 				  <li class='nav-item dropdown'>
 				    <a class='nav-link dropdown-toggle' data-bs-toggle='dropdown' href='#about' role='button' aria-expanded='false'>about</a>
 				    <ul class='dropdown-menu black_bg'>
+				    <li><a class='dropdown-item' href='#features'>killer features</a></li>
 				      <li><a class='dropdown-item' href='#about'>about</a></li>
 				      <li><a class='dropdown-item' href='#team'>team</a></li>
 				      <li><a class='dropdown-item' href='#partners'>partners</a></li>
@@ -157,7 +159,7 @@
 
 	<section id='product' class ='green_bg p-5'>
 
-		<div class='relative_block'>
+		<div class='relative_block '>
 			<div class='ci_2_y_de'></div>
 			<div class='ci_2_yy_de'></div>
 			<div class='ci_2_yyy_de'></div>
@@ -166,18 +168,50 @@
 		</div>
 
 		<div class='glass block_product up_z mt_-26'>
-			<h2 class='pt-5 ps-5' >Product</h2>
+			<h1 class='pt-3 ps-5'>Product</h1>
 			<center>
-				<img src='static/img/product_desctop.svg' class='img-fluid py-5'>
+				<img src='static/img/product_desctop.svg' class='img-fluid py-4'>
 			</center>
+
+		<div id='features'>
+			<div class='d-flex justify-content-start'>
+				<div>
+					<img class='astronaut_3 team_card_img pt-5 pb-3' src="static/img/knife.png">
+				</div>
+				<div class='mt-5'>
+					<h1 class='pt-5 ps-5'>Tech Killer Features</h1>
+				</div>
+			</div>
+
+			
+			<div>
+				<div class='row mx-md-5'>
+					<div class='col-md-5 mx-md-1'>	
+						<ul class='py-3 ps-md-5'>
+							<li>Connect application in Telegram. Web application mobile soon</li>
+							<li>Servers around the world fast connect</li>
+							<li>Own trading strategy testing platform</li>
+							<li>Automatic search for causes</li>
+						</ul>
+					</div>
+
+					<div class='col-md-5 mx-md-1'>
+						<ul class='pt-3'>
+							<li>Copytrade / Each one builds his own trading strategies</li>
+							<li>Trading bots/ live traders and ML algorithms</li>
+							<li>Loss of time / full automation trading (a person doesn't lose a moment, but this isn't a copytrading)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		</div>
 	</section>
 
-
-
 	<section id='tariffs' class ='black_bg'>
 
- 		<div class='relative_block'>
+ 		<div class='relative_block animation_here'>
  			<div class='ci_3_bbbb_de mt_30'></div>
 			<div class='ci_3_y_de mt_46'></div>
 			<div class='ci_3_yy_de mt-4'></div>
@@ -188,7 +222,7 @@
 
 		<div class='block_product'>
 			<div class='up_z p-5 block'>
-				<h2 class='white_milk ps-5 pt-5'>Tariffs</h2>
+				<h1 class='white_milk ps-5 pt-5'>Tariffs</h1>
 
 				<p class='white_milk ps-5 pt-5'>Choose the optimum subscription plan
 
@@ -202,7 +236,7 @@
 								<div class='row'>
 									<div class='col-md-6'>
 										<center>
-										<div class='tariff_card inset_card green_bg'>
+										<div class='tariff_card px-2 inset_card green_bg'>
 											<img class='tariff_card_img pt-3 pb-3' src="static/img/samokat.png">
 											<h3 class='pt-4'>Base</h3>
 											<p>$50/month</p>
@@ -212,7 +246,7 @@
 
 									<div class='col-md-6'>
 										<center>
-										<div class='tariff_card inset_card green_bg'>
+										<div class='tariff_card px-2 inset_card green_bg'>
 											<img class='tariff_card_img pt-3 pb-3' src="static/img/spaceship.png">
 											<h3 class='pt-4'>PRO</h3>
 											<p>$300/year</p>
@@ -228,7 +262,6 @@
 						</div>
 
 						
-
 						<div class='col-md-7'>
 							<div class='row glass  mt_-10 w-100'>
 								<div class='col-md-6'>
@@ -349,9 +382,7 @@
 			</div>
 		</div>
 
-
-</section>
-
+	</section>
 </div>
 
 <!-- DESCTOP TOP END -->
@@ -364,7 +395,7 @@
 	<nav class='navbar navbar-dark navbar-expand-lg black_bg up_z'>
 		<div class='container-fluid'>
 
-		    <a class='navbar-brand' href='#'>
+		    <a class='navbar-brand' href='https://skillunion.io/'>
 		    	<img class='logo' src='static/img/logo_letters.svg'>
 		    </a>
 
@@ -376,12 +407,12 @@
 		    <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
 		      <div class='navbar-nav'>
 		      	<div class='d-flex justify-content-around'>
-		      		<ul>
+		      		<ul class="navbar-nav">
 			        	<li>
-			        		<a class='nav-link' aria-current='page' href='#product'>product</a>
+			        		<a class='nav-link' href='#product_mob'>product</a>
 			        	</li>
 			        	<li>
-			        		<a class='nav-link' href='#tariffs'>tariffs</a>
+			        		<a class='nav-link' href='#tariffs_mob'>tariffs</a>
 			        	</li>
 			        	<li>
 			        		<a class='nav-link' href='#calculator'>calculator</a>
@@ -405,14 +436,14 @@
 		  </div>
 	</nav>
 
-	<section class ='black_bg'>
+	<section class ='black_bg clip_overflow_x'>
+
 		<div class='animation_here'>
 			<div class='ci_1_g_mo'></div>
 			<div class='ci_1_y_mo'></div>
 			<div class='ci_1_b_mo'></div>	 			
-		</div>
 		
-		<div id='carouselExampleSlidesOnly' class='carousel slide' data-bs-ride='carousel'>
+			<div id='carouselExampleSlidesOnly' class='carousel slide' data-bs-ride='carousel'>
 			  <div class='carousel-inner'>
 
 			    <div class='carousel-item active'>
@@ -466,20 +497,55 @@
 			      	
 			      </div>
 			    </div>   
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id='product_mob' class ='green_bg clip_overflow_x py-4 ps-1'>
+		<div>
+			<h1 class='ps-4 py-4'>Product</h1>
+
+			<center>
+				<img src='static/img/product_mob.png' class='img-fluid pt-2 pb-4 up_z w-100'>
+			</center>
+					
+			<div id='features' class='mt-2'>
+				<center>
+					<img class='astronaut_3 team_card_img pt-5 pb-4' src="static/img/knife.png">
+				
+					<h1 class='pb-3'>Tech Killer Features</h1>
+				</center>
+			</div>
+
+			<div>
+	
+				<ul class='pt-4 px-5'>
+					<li>Connect application in Telegram, web application mobile soon</li>
+					<li>Servers around the world fast connect</li>
+					<li>Own trading strategy testing platform</li>
+					<li>Automatic search for causes</li>
+				</ul>
+			</div>
+			<center>
+					<img class='astronaut_3 team_card_img py-4' src="static/img/crypto01.png">
+				</center>
+			<div class=''>
+				<ul class='pt-3 pb-3 px-5'>
+					<li>Copytrade / Each one builds his own trading strategies</li>
+					<li>Trading bots/ live traders and ML algorithms</li>
+					<li>loss of time / full automation trading (a person doesn't lose a moment, but this isn't a copytrading)</li>
+				</ul>
 			</div>
 		</div>
 	</section>
 
-	<section class ='green_bg py-4 ps-1'>
-			<h1 class='ps-4 py-4'>Product</h1>
-			<center>
-				<img src='static/img/product_mob.png' class='img-fluid pt-2 up_z w-100'>
-			</center>
-	</section>
 
+	<section id='tariffs_mob' class ='black_bg clip_overflow_x up_z py-4'>
 
-	<section id='' class ='black_bg up_z py-4'>
-		<h1 id='tariffs' class='white_milk ps-4 py-4'>Tariffs</h1>
+		<h1 class='white_milk ps-4 py-5'>Tariffs</h1>
+		<h3 class='white_milk ps-4 pb-3'>Choose the optimum subscription plan</h3>
 		<div class='container pb-5'>
 			<div class='row'>
 				<div class='col-sm-6'>
@@ -535,25 +601,26 @@
 					<td><p class='ms-4'>VIP</td>
 				</tr>
 			</table>
-
 		</div>
-		
 
-		<h1 id='' class='white_milk ps-4 pt-3'>Calculator</h1>
+
+		<h1 id='calculator' class='white_milk ps-4 pt-3'>Calculator</h1>
 		<p class='py-3 ps-4 white_milk'>Let's calculate your profit!</p>
 
+		<!-- CALCULATOR MOB START -->
 
+		<div class='calc_body my-5'>
 
-		<div id='calculator' class='calc_body my-5'>
 
 			<h4 class='calc_h4'>Deposit</h4>
 								  
-			<input id='deposit' type='text' class='only_int calc_input form-control' placeholder='ADD' aria-label='ADD'>
-			<div id='notion_deposit' class='calc_details bordo'></div>
+			<input id='deposit_mob' type='text' class='only_int calc_input form-control' placeholder='ADD' aria-label='ADD'>
+			<div id='notion_deposit_mob' class='calc_details bordo'></div>
+			
 			<div class='d-flex justify-content-between'>
-				<button id='th3' class='calc_btn_sm btn_glass'><p>3.000</p></button>
-				<button id='th10' class='calc_btn_sm btn_glass'><p>10.000</button>
-				<button id='th50' class='calc_btn_sm btn_glass'><p>50.000</button>
+				<button id='th3_mob' class='calc_btn_sm btn_glass'><p>3.000</p></button>
+				<button id='th10_mob' class='calc_btn_sm btn_glass'><p>10.000</button>
+				<button id='th50_mob' class='calc_btn_sm btn_glass'><p>50.000</button>
 			</div>
 
 
@@ -563,21 +630,21 @@
 				</div>
 				<div class='ps-5 pt-3 radio'>
 					<div class='pb-2 form-check' value='320'>
-					 	<input class='radio form-check-input' type='radio' name='flexRadioDefault' id='optimist' value='320'>
+					 	<input class='radio form-check-input' type='radio' name='flexRadioDefault' id='optimist_mob' value='320'>
 
 					 	<label class='ms-2 calc_details form-check-label' for='optimist'>
 					    optimist
 					 	</label>
 					</div>
 					<div class='pb-2 form-check' value='150'>
-					 	<input class='radio form-check-input' type='radio' name='flexRadioDefault' id='realist' value='120' checked>
+					 	<input class='radio form-check-input' type='radio' name='flexRadioDefault' id='realist_mob' value='120' checked>
 
 					 	<label class='ms-2 calc_details form-check-label' for='realist'>
 					    realist
 					 	</label>
 					</div>
 					<div class='form-check'  value='80'>
-					 	<input class=' radio form-check-input' type='radio' name='flexRadioDefault' id='pessimist' value='80'>
+					 	<input class=' radio form-check-input' type='radio' name='flexRadioDefault' id='pessimist_mob' value='80'>
 
 					 	<label class='ms-2 calc_details form-check-label' for='pessimist'>
 					    pessimist
@@ -586,13 +653,14 @@
 				</div>
 			</div>
 
+
 			<h4 class='calc_h4 pt-3'>Months</h4>
-			<input hidden id='mths' type='text' class='only_int calc_input form-control' placeholder='MONTHS' aria-label='MONTHS'> 
-			<div id='notion' class='calc_details bordo'></div>
+			<input hidden id='mths_mob' type='text' class='only_int calc_input form-control' placeholder='MONTHS' aria-label='MONTHS'> 
+			<div id='notion_mob' class='calc_details bordo'></div>
 			<div class='d-flex justiрfy-content-start pb-1'>
-				<button id='m1' class='px-3 calc_btn_sm btn_glass me-3'><p>12</p></button>
-				<button id='m3' class='px-3 calc_btn_sm btn_glass me-3'><p>24</button>
-				<button id='m6' class='px-3 calc_btn_sm btn_glass me-3'><p>36</button>
+				<button id='m1_mob' class='px-3 calc_btn_sm btn_glass me-3'><p>12</p></button>
+				<button id='m3_mob' class='px-3 calc_btn_sm btn_glass me-3'><p>24</button>
+				<button id='m6_mob' class='px-3 calc_btn_sm btn_glass me-3'><p>36</button>
 			</div>
 
 
@@ -602,20 +670,21 @@
 					monthly
 				</div>
 				<div class='form-check form-switch'>
-				  <input class='form-check-input' type='checkbox' id='subscr_plan' checked>
+				  <input class='form-check-input' type='checkbox' id='subscr_plan_mob' checked>
 				</div>
 				<div class='calc_details'>
 					annual 
 				</div>
 			</div>
 
-			<div id='result_inner'></div>
+			<div id='result_inner_mob'></div>
 
 			<center>
-				<button id='show_result' class='calc_btn_result' onClick='showResult(event);'>SHOW  RESULT</button>
+				<button id='show_result_mob' class='calc_btn_result' onClick='showResult_mob(event);'>SHOW  RESULT</button>
 			</center>
 		</div>
 
+		<!-- CALCULATOR MOB START -->
 	</section>
 
 </div>
@@ -624,43 +693,133 @@
 
 
 
-<section class ='green_bg py-4 ps-1'>
-	<div class='glass'><h2>About</h2></div>
-		<div class='glass'><h2>Team</h2></div>
-		<div class='glass'><h2>Partners</h2></div>
+<section class ='green_bg clip_overflow_x py-4 ps-1'>
+	
+	<div id='about' class='glass block_product up_z'>
+		<h1 class='pt-5 ps-md-5 ps-sm-4'>About</h1>
 
-	<h1 class='pb-2'>The official broker of BYBIT</h1>
-	<h1>Available on the BINANCE exchange</h1>
+		<div class=''>
+			<div class='row px-md-5'>
+				<div class='col px-md-5'>
+					<center><img class='astronaut_1 about_card_img pt-3 pb-2' src="static/img/idea.png"></center>
+					
+					<p class='py-5'>An Intellectual Union that brings together the years of experience of our analytics, economists and technical specialists, offered in a unique solution for trading and investing in the cryptocurrency and stock markets</p>
+				</div>
+				<div class='col mx-md-5'>
+					<center><img class='astronaut_2 about_card_img pt-3 pb-2' src="static/img/safety.png"></center>
+					
+					<p class='py-5'>Deposit protection smart system against unexpected exchange rate fluctuations allows trading regardless of market conditions</p>
+				</div>
+				<div class='col mx-md-5'>
+					<center>
+					<img class='astronaut_3 about_card_img pt-3 pb-2' src="static/img/crypto.png">
+					</center>
+					
+					<p class='py-5'>Simple and clear application helps users to trade or invest without specific knowledge; removes the need to rely on trust management of unjustified risks</p>
+				</div>
+			</div>
+		</div>	
 
-	<h3>Copytrade / each one builds his own trading strategies</h3>
-	<ul>
-		<li>trading bots/ live traders and ML algorithms</li>
-		<li>loss of time /full automation trading (a person doesn't lose a moment, but this isn't a copytrading)</li>
-	</ul>
-
-	<h3>Tech killer features</h3>
-	<ul>
-		<li>connect application in Telegram, web application mobile soon</li>
-		<li>servers around the world fast connect</li>
-		<li>own trading strategy testing platform</li>
-		<li>automatic search for causes</li>
-	</ul>
+	</div>
 </section>
 
 
-			      	
+
+
+<section  class='black_bg clip_overflow_x py-4'>
+
+	<div class='relative_block d-none d-lg-block d-xl-block d-xxl-block'>
+		<div class='ci_team_y_mo'></div>
+		<div class='ci_team_bb_mo'></div>	
+	</div>
+
+
+	<div id='team' class='glass block_product up_z mt_-34'>
+		<h1 class='pt-5 ps-md-5 ps-sm-4 white_milk'>Team</h1>
+
+		<div class='white_milk'>
+			<div class='row px-md-5'>
+
+				<div class='col px-md-5'>
+					<center><img class='team_card_img mt-5' src="static/img/CFO.png">
+					<h3 class='my-5'>CFO/CO-FOUNDER</h3>
+					</center>
+					<p>10 years experience in crypto business 
+					<p>High blockchain technology skills
+					<p>DEX multi chain concept development
+				</div>
+
+				<div class='col px-md-5'>
+					<center><img class='team_card_img mt-5' src="static/img/CEO.png">
+					<h3 class='my-5'>CEO  OWNER</h3>
+					</center>
+					<p>15 years of automotive business-management experience, including 4&nbsp;years at BMW Group AG. Propelled BMW to the top spot in sales, Russia
+					<p>Since 2017: Analytics, Cryptocurrency Sector Investment And Trading Strategies Development
+					<p>2018-Present: Trust Portfolio Management
+				</div>
+
+				<div class='col mx-md-5'>
+					<center><img class='team_card_img mt-5' src="static/img/CMO.png">
+					<h3 class='py-5'>CMO/CO-FOUNDER</h3>
+					</center>
+					<p>8-years Of Digital Marketing Experience
+					<p>Strong Design And Web Skills Development
+					<p>Linguistic And Philological Skills
+				</div>
+
+				<div class='col'>
+					<center>
+					<img class='team_card_img mt-5' src="static/img/CTO.png">
+					<h3 class='py-5'>CTO/CO-FOUNDER</h3>
+					</center>
+					<p>20+ years Of Development Experience
+					<p>8+ years Of IT Team-Management
+					<p>High-Load Systems Structure Engineering
+					<p>Creating IT solutions For Startups
+				</div>
+
+			</div>
+		</div>	
+	</div>
+
+</section>
 
 
 
-<!-- 	<section class ='green_bg'>
-		<div class='glass'><h2>About</h2></div>
-		<div class='glass'><h2>Team</h2></div>
-		<div class='glass'><h2>Partners</h2></div>
-	</section> -->
+
+
+<section class ='green_bg clip_overflow_x py-4 ps-1'>
+	
+	<div class='relative_block d-none d-lg-block d-xl-block d-xxl-block'>
+		<div class='ci_pa_yy_de'></div>
+		<div class='ci_pa_g_de'></div>
+	</div>
+	
+	<div id='partners' class='glass block_product up_z mt_-34'>
+		<h1 clas='pt-5 ps-md-5 ps-sm-4'>Partners</h1>
+
+		<div class='mt-5'>
+			<div class='row'>
+				<div class='col-md-5'>
+					<center>
+					<img class='img-fluid mt-2' src='static/img/bybit-white.png'>
+					<p class='pt-3'>The official broker of BYBIT</p>
+					</center>
+				</div>
+				<div class='col-md-5 ps-md-5'>
+					<center>
+					<img class='img-fluid mt-5' src='static/img/binance_logo.png'>
+					<p class='pt-3'>Available on the BINANCE exchange</p>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
-<footer class='black_bg pt-3 up_z'>
+<footer class='black_bg clip_overflow_x pt-5 up_z'>
 	<div class='container'>
 		<div class='row'>
 
@@ -680,14 +839,15 @@
 			<div class='col-md'>
 				<div class='row'>
 					<div class='col-6'>
-		        		<a class='nav-link' aria-current='page' href='#'>product</a>
-		        		<a class='nav-link' href='#'>tariffs</a>
-		        		<a class='nav-link' href='#'>calculator</a>
+		        		<a class='nav-link' aria-current='page' href='#product'>product</a>
+		        		<a class='nav-link' aria-current='page' href='#features'>killer features</a>
+		        		<a class='nav-link' href='#tariffs'>tariffs</a>
+		        		<a class='nav-link' href='#calculator'>calculator</a>
 					</div>
 					<div class='col-6'>
-						<a class='nav-link' href='#'>about</a>
-		        		<a class='nav-link' href='#'>team</a>
-		        		<a href='https://t.me/SkillUnionTradeBot'><img class='app_button' src='static/img/app_button.svg'>
+						<a class='nav-link' href='#about'>about</a>
+		        		<a class='nav-link' href='#team'>team</a>
+		        		<a href='https://t.me/SkillUnionTradeBot'><img class='img-fluid app_button' src='static/img/app_button.svg'>
 		        		</a></div>
 					</div>
 				</div>
@@ -711,6 +871,8 @@
 </footer>
 
 	<script src='static/js/calc.js'></script>
+	<script src='static/js/calc_mob.js'></script>
+	<script src='static/js/sticky_top.js'></script>
 
 	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'></script>
 </body>

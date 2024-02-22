@@ -10,9 +10,15 @@ circles
 .relative_block{
   position: relative;
 }
+
 .absolute_block{
   position: absolute;
 }
+
+.animation_here{
+  overflow-x: clip!important;
+}
+
 
 /* FIRST SCREEN -- DESCTOP */
 
@@ -377,15 +383,15 @@ circles
   }
   @keyframes move_prod_2_yyy {
     0%{
-      left: 74%;
+      left: 72%;
       top: -20%;
     }
     50%{
-      left: 74%;
+      left: 72%;
       top: -36%;
     }
     100%{
-      left: 74%;
+      left: 72%;
       top: -20%;
     }
   }
@@ -405,15 +411,15 @@ circles
   }
   @keyframes move_prod_2_bb {
     0%{
-      left: 88%;
+      left: 85%;
       top: 140%;
     }
     50%{
-      left: 88%;
+      left: 85%;
       top: 120%;
     }
     100%{
-      left: 88%;
+      left: 85%;
       top: 140%;
     }
   }
@@ -553,5 +559,176 @@ circles
       top: 140%;
       width: 240px;
       height: 240px;
+    }
+  }
+
+
+/*  ASTRONAUTS */
+
+.astronaut_1{
+  position: relative;
+  animation: move_astronaut_1 3s infinite;
+}
+@keyframes move_astronaut_1 {
+    0%{
+      top: 0%;
+    }
+    50%{
+      top: 4%;
+    }
+    100%{
+      top: 0%;
+
+    }
+  }
+
+.astronaut_2{
+  position: relative;
+  animation: move_astronaut_2 3.5s infinite;
+}
+@keyframes move_astronaut_2 {
+    0%{
+      top: 1%;
+
+    }
+    50%{
+      top: 5%;
+    }
+    100%{
+      top: 1%;
+
+    }
+  }
+
+.astronaut_3{
+  position: relative;
+  animation: move_astronaut_3 3s infinite;
+}
+@keyframes move_astronaut_3 {
+    0%{
+      top: 3%;
+    }
+    50%{
+      top: 0%;
+    }
+    100%{
+      top: 3%;
+
+    }
+  }
+
+
+/*  TEAM  */
+
+  .ci_team_b_mo{
+    width: 180px;
+    height: 180px;
+    left: 80%;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+    position: relative;
+    animation: move_ci_team_b_mo 14s infinite;
+  }
+  @keyframes move_ci_team_b_mo {
+    0%{
+      top: -25%;
+    }
+    50%{
+      top: -20%;
+    }
+    100%{
+      top: -25%;
+    }
+  }
+
+  .ci_team_bb_mo{
+    width: 120px;
+    height: 120px;
+    left: 4%;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgb(129, 174, 58),rgb(28, 28, 28));
+    position: relative;
+    animation: move_ci_team_bb_mo 17s infinite;
+  }
+  @keyframes move_ci_team_bb_mo {
+    0%{
+      top: -42%;
+    }
+    50%{
+      top: -47%;
+    }
+    100%{
+      top: -42%;
+
+    }
+  }
+
+
+
+.ci_team_y_mo{
+    width: 480px;
+    height: 480px;
+    left: -9%;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+    position: relative;
+    animation: move_ci_team_y_mo 20s infinite;
+  }
+  @keyframes move_ci_team_y_mo {
+    0%{
+      top: -56%;
+    }
+    50%{
+      top: -50%;
+    }
+    100%{
+      top: -56%;
+
+    }
+  }
+
+
+
+
+
+.ci_pa_g_de{
+    width: 470px;
+    height: 470px;
+    left: 84%;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgb(129, 174, 58), rgb(28, 28, 28));
+    position: relative;
+    animation: move_ci_pa_g_de 15s infinite;
+  }
+  @keyframes move_ci_pa_g_de {
+    0%{
+      top: -9%;
+    }
+    50%{
+      top: -16%;
+    }
+    100%{
+      top: -9%;
+    }
+  }
+
+.ci_pa_yy_de{
+    width: 120px;
+    height: 120px;
+    left: 4%;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgb(251, 255, 44), rgb(28, 28, 28));
+    position: relative;
+    animation: move_ci_pa_yy_de 12s infinite;
+  }
+  @keyframes move_ci_pa_yy_de {
+    0%{
+      top: 30%;
+    }
+    50%{
+      top: 26%;
+    }
+    100%{
+      top: 30%;
     }
   }
