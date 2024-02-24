@@ -33,6 +33,7 @@ p, li {
 
 a{
 	text-decoration: none;
+	color: var(--black);
 }
 
 
@@ -102,24 +103,31 @@ Various on devices
 
 /* DESCTOP */
 
-@media (min-width: 811px){
+@media (min-width: 1025px){
 	.logo{
-		width: 280px;
-		padding-left: 40px;
-		padding-top: 10px;
-		margin-bottom: 10px;
+		width: 17.5em;
+		padding-left:  2.5em;
+		padding-top: 0.625em;
+		margin-bottom: 0.625em;
 	}
 	h1{
 		font-size: 48px;
 	}
 	p, li{
-		font-size: 24px;
-	}
-	.details{
 		font-size: 20px;
 	}
+	.details{
+		font-size: 18px;
+	}
 
-
+	.glass{
+		background: linear-gradient(var(--green), var(--black), 0.35);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border-radius: 20px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		padding: 2em;
+	}
 	.block_product{
 		width:86%;
 		margin-left: auto;
@@ -132,10 +140,13 @@ Various on devices
 		height: 1072px;
 	}	
 
+	.features_card_img{
+		height: 12em;
+	}
+
 	.m_3{
 		margin: 3em;
 	}
-
 	.mt_-26{
 		margin-top: -26em!important;
 	}
@@ -145,28 +156,93 @@ Various on devices
 }
 
 
-
-/* PHONE & TABLET */
-
-@media (max-width: 810px) {
+/*  TABLET */
+@media (min-width: 811px) and (max-width: 1024px){
 	.logo{
-		width: 180px;
+		width: 280px;
+		padding-left: 40px;
 		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+	h1{
+		font-size: 48px;
 	}
 	p, li{
 		font-size: 20px;
 	}
-	h1{
-		font-size: 36px;
-	}
 	.details{
 		font-size: 18px;
+	}
+	.glass{
+		background: linear-gradient(var(--green), var(--black), 0.35);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border-radius: 20px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		padding: .5em;
 	}
 
 	.block_product{
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.features_card_img{
+		height: 9em;
+	}
+
+	.carousel_text_block{
+		padding: 12em 4em;
+		color: var(--white_milk);
+		height: 53.125em;
+	}
+
+	.m_3{
+		margin: .3em;
+	}
+	.mt_-26{
+		margin-top: 0em;
+	}
+	.mt_-34{
+		margin-top: 2em!important;
+	}
+}
+
+/* PHONE */
+
+@media (max-width: 810px) {
+	.logo{
+		width: 11.25em;
+		min-width: 120px;
+		padding-top: 10px;
+	}
+
+	p, li{
+		font-size: 18px;
+	}
+	h1{
+		font-size: 36px;
+	}
+	.details{
+		font-size: 16px;
+	}
+
+	.glass{
+		background: linear-gradient(var(--green), var(--black), 0.35);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border-radius: 20px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		padding: .5em;
+	}
+
+	.block_product{
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.features_card_img{
+		height: 9em;
 	}
 
 	.carousel_text_block{
@@ -194,15 +270,7 @@ Various on devices
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ 
 
 
-.glass{
-	background: linear-gradient(var(--green), var(--black), 0.35);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border-radius: 20px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-	padding: 2em;
-}
 
 
 .glass h2{
@@ -249,7 +317,7 @@ Various on devices
 
 .nav-link{
 	color:var(--white_milk);
-	font-size: 20px;
+	font-size: 18px;
 }
 .nav-link:hover{
 	color:var(--green);
@@ -317,19 +385,26 @@ Various on devices
 	height: 10.75em;
 }
 .about_card_img{
-	height: 12em;
+	height: 9em;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 .team_card_img{
-	height: 16em;
+	height: 9em;
 	margin-left: auto;
 	margin-right: auto;
 }
 .block{
-	height: 970px;
+	height: 60.625em;
 }
 
 .team_card{
   width: 20em;
   height: 30em;
   padding: 12px;
+}
+
+.logo_footer{
+	width: 15.625em;
 }
